@@ -19,7 +19,7 @@ body:
     attributes:
       label: Program
       options:
-        - Genesis Private Coaching
+        - Genesis Coaching
         - Summer 2026 Retreat
         - Both
     validations:
