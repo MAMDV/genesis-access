@@ -1,0 +1,8 @@
+# Ruflo / claude-flow runtime state (machine output, never content)
+.claude-flow/
+.swarm/
+*.rvf
+*.rvf.lock
+
+# OS junk
+.DS_Store
