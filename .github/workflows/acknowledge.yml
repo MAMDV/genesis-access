@@ -1,0 +1,20 @@
+name: Acknowledge request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  acknowledge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on new request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh issue comment "$ISSUE" -R "$REPO" --body "Thanks, your request is in. Mark approves these personally, usually within a day. Once approved, GitHub will email an invitation to the address on your GitHub account. Accept it within 7 days."

@@ -1,0 +1,33 @@
+name: Request access
+description: Request read access to your Genesis coaching materials
+title: "Access request"
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This takes 30 seconds. Requests are publicly visible, so the form only asks for your first name.
+  - type: input
+    id: first-name
+    attributes:
+      label: First name
+      description: The first name you signed up with.
+    validations:
+      required: true
+  - type: dropdown
+    id: program
+    attributes:
+      label: Program
+      options:
+        - Genesis Private Coaching
+        - Summer 2026 Retreat
+        - Both
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: "I'm a current Genesis client and I understand access is read-only."
+          required: true
