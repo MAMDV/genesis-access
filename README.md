@@ -4,7 +4,7 @@ This is the access desk for HeroForge Genesis coaching materials.
 
 If you're a current Genesis client, request access here:
 
-## [Request access](https://github.com/MAMDV/genesis-access/issues/new?template=access-request.yml)
+## [Request access](https://github.com/mamd69/genesis-access/issues/new?template=access-request.yml)
 
 What happens next:
 
